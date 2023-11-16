@@ -1,7 +1,10 @@
 <script setup>
-import ChildComp from "@/ChildComp.vue";
+import { ref } from 'vue'
+import ChildComp from '@/ChildComp.vue'
+
+const greeting = ref('Hello from parent')
 </script>
 
 <template>
-  <ChildComp/>
+  <ChildComp />
 </template>
