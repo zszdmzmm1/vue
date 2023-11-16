@@ -5,7 +5,7 @@ const titleClass = ref('title')
 </script>
 
 <template>
-  <h1>Make me Red</h1>
+  <h1 :class="titleClass">Make me Red</h1>
 </template>
 
 <style>
