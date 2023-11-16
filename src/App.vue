@@ -1,7 +1,12 @@
 <script setup>
-import { ref } from 'vue'
+import {onMounted, ref} from 'vue'
 
 const pElementRef = ref(null)
+
+onMounted(() => {
+  pElementRef.value.textContent = 'mounted!'
+})
+
 </script>
 
 <template>
