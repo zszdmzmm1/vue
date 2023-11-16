@@ -1,18 +1,10 @@
 <script setup>
 import { ref } from 'vue'
 
-const titleClass = ref('title')
+const count = ref(0)
 </script>
 
 <template>
-  <h1 :class="titleClass">Make me Red</h1>
+  <!-- 使此按钮生效 -->
+  <button>count is: {{ count }}</button>
 </template>
-
-<style>
-.title {
-  color: red;
-}
-.title-blue {
-  color: blue;
-}
-</style>
