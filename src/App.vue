@@ -2,10 +2,12 @@
 import { ref, computed } from 'vue'
 import Home from './Home.vue'
 import SomeOtherPage from './SomeOtherPage.vue'
+import BookList from "./BookMap.vue";
 
 const routes = {
   '/': Home,
-  '/some-other-page': SomeOtherPage
+  '/some-other-page': SomeOtherPage,
+  '/book-list': BookList
 }
 
 const currentPath = ref(window.location.hash)
@@ -23,6 +25,7 @@ const currentView = computed(() => {
   <ul>
     <li> <a href= "#/"> home page </a> </li>
     <li> <a href="#/some-other-page">SomeOtherPage</a> </li>
+    <li> <a href="#/book-list">BookList</a> </li>
   </ul>
   <component :is="currentView" />
 </template>
